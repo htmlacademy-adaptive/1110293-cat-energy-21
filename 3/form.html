@@ -47,44 +47,44 @@
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <div class="form__parameters">
-              <p class="form-option form-input">
+            <fieldset class="form__parameters">
+              <p class="form__item form-input">
                 <label class="form__label" for="name-name">ИМЯ:*</label>
                 <input
-                  class="form__name-input"
+                  class="form__field"
                   id="name-name"
                   type="text"
                   name="name"
                   placeholder="БАРСИК"
                 />
               </p>
-              <p class="form-option form-input">
+              <p class="form__item form-input">
                 <label class="form__label" for="weight-weight"
                   >ВЕС (КГ):*</label
                 >
                 <input
-                  class="form__weight-input"
+                  class="form__field"
                   id="weight-weight"
                   type="number"
                   name="weight"
                   placeholder="7"
                 />
               </p>
-              <p class="form-option form-input">
+              <p class="form__item form-input">
                 <label class="form__label" for="age-age">ВОЗРАСТ (ЛЕТ):</label>
                 <input
-                  class="form__age-input"
+                  class="form__field"
                   id="age-age"
                   type="number"
                   name="age"
                   placeholder="7"
                 />
               </p>
-            </div>
-            <div class="form__program">
-              <p class="form-option form-radio">
+            </fieldset>
+            <fieldset class="form__program">
+              <p class="form__item form-radio">
                 <input
-                  class="visually-hidden form-input-radio"
+                  class="visually-hidden form__field-radio"
                   type="radio"
                   name="form-program"
                   value="slim"
@@ -93,9 +93,9 @@
                 />
                 <label for="form-slim">ПОХУДЕНИЕ</label>
               </p>
-              <p class="form-option form-radio">
+              <p class="form__item form-radio">
                 <input
-                  class="visually-hidden form-input-radio"
+                  class="visually-hidden form__field-radio"
                   type="radio"
                   name="form-program"
                   value="weight"
@@ -103,9 +103,9 @@
                 />
                 <label for="form-weight">НАБОР МАССЫ</label>
               </p>
-              <p class="form-option form-radio">
+              <p class="form__item form-radio">
                 <input
-                  class="visually-hidden form-input-radio"
+                  class="visually-hidden form__field-radio"
                   type="radio"
                   name="form-program"
                   value="recommendation"
@@ -115,9 +115,10 @@
                   >НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label
                 >
               </p>
-            </div>
-            <div class="form__contacts">
-              <p class="form-option form-input">
+            </fieldset>
+            <fieldset class="form__contacts">
+              <legend>Контактные данные (владельца кота)</legend>
+              <p class="form__item form-input">
                 <label class="form__label" for="mail-mail">E-MAIL:*</label>
                 <input
                   class="mail-user"
@@ -127,7 +128,7 @@
                   placeholder="kuklachev@gmail.com"
                 />
               </p>
-              <p class="form-option form-input">
+              <p class="form__item form-input">
                 <label class="form__label" for="phone-phone">ТЕЛЕФОН:*</label>
                 <input
                   class="login-icon-password"
@@ -137,16 +138,17 @@
                   placeholder="8 (960) 900-60-90"
                 />
               </p>
-            </div>
-            <div class="form__textarea">
-              <p class="form-option form-input">
-                <span>Комментарий</span><br />
-                <label class="visually-hidden" for="textarea"></label>
-                <textarea id="textarea" class="textarea" rows="3">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <fieldset class="form__textarea">
+              <legend>Комментарий</legend>
+              <p class="form__item form-input">
+                <label class="visually-hidden" for="form__textarea"></label>
+                <textarea id="textarea" class="form__textarea" rows="3">Расскажите обо всех повадках кота</textarea>
               </p>
-            </div>
-            <div class="form__checkbox">
-              <p class="form-option form-checkbox">
+            </fieldset>
+            <fieldset class="form__checkbox">
+              <legend>Дополнительно</legend>
+              <p class="form__item form-checkbox">
                 <input
                   class="visually-hidden form-input-checkbox form-input"
                   type="checkbox"
@@ -156,7 +158,7 @@
                 />
                 <label for="form-sugar-substitute">сахарозаменитель</label>
               </p>
-              <p class="form-option form-checkbox">
+              <p class="form__item form-checkbox">
                 <input
                   class="visually-hidden form-input-checkbox form-input"
                   type="checkbox"
@@ -165,7 +167,7 @@
                 />
                 <label for="form-water">питьевая вода</label>
               </p>
-              <p class="form-option form-checkbox">
+              <p class="form__item form-checkbox">
                 <input
                   class="visually-hidden form-input-checkbox form-input"
                   type="checkbox"
@@ -174,7 +176,7 @@
                 />
                 <label for="form-milk">молоко</label>
               </p>
-              <p class="form-option form-checkbox">
+              <p class="form__item form-checkbox">
                 <input
                   class="visually-hidden form-input-checkbox form-input"
                   type="checkbox"
@@ -183,7 +185,7 @@
                 />
                 <label for="form-vitamins">витамины</label>
               </p>
-            </div>
+            </fieldset>
             <button class="form__button" type="submit">отправить заявку</button>
           </form>
           <span class="form__annotation">* — Обязательные поля</span>
