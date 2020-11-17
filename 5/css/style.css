@@ -1,0 +1,100 @@
+.page {
+  box-sizing: border-box; }
+
+.center {
+  padding: 0 20px; }
+
+.page__body {
+  width: 320px;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #444444; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.program-header__wrapper {
+  position: relative;
+  color: white;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 302px;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center; }
+
+.program__title {
+  font-size: 36px;
+  line-height: 36px; }
+
+.program__slogan {
+  line-height: 14px; }
+
+.program__item {
+  background-color: #eaeaea; }
+
+.program__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  color: black; }
+
+.program__description {
+  font-size: 14px; }
+
+.program__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: black; }
+
+.example__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  color: black; }
+
+.advantages__item {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.example {
+  background-color: #eaeaea; }
+
+.contacts__title {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase; }
+
+.contacts__text {
+  line-height: 20px; }
+
+.page-footer__bottom {
+  background-color: #eaeaea; }
+
+/*# sourceMappingURL=style.css.map */
