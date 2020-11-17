@@ -1,0 +1,22 @@
+.program__item {
+  background-color: $background-color-block;
+}
+
+.program__subtitle {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 37px;
+  color: $dark;
+}
+
+.program__description {
+  font-size: 14px;
+}
+
+.program__link {
+  font-family: $font;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: $dark;
+}
