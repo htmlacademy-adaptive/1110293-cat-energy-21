@@ -1,3 +1,10 @@
-body {
-  background: red;
-}
+@import "_variables.scss";
+@import "page.scss";
+@import "center.scss";
+@import "page__body.scss";
+@import "page-header.scss";
+@import "program-header.scss";
+@import "program.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "page-footer.scss";
