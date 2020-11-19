@@ -2,36 +2,40 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="img/logo-mobile.png"
-          width="33"
-          height="37"
-          alt="Питание для кошек «Кэт энерджи»"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="site-list__item site-list__item--active">
-              <a> ГЛАВНАЯ </a>
-            </li>
-            <li class="site-list__item">
-              <a> КАТАЛОГ ПРОДУКЦИИ </a>
-            </li>
-            <li class="site-list__item">
-              <a> ПОДБОР ПРОГРАММЫ </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper center">
+        <a class="page-header__logo">
+          <img
+            src="img/logo-mobile.png"
+            width="33"
+            height="37"
+            alt="Питание для кошек «Кэт энерджи»"
+          />
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper visually-hidden">
+            <ul class="main-nav__list">
+              <li class="site-list__item site-list__item--active">
+                <a> ГЛАВНАЯ </a>
+              </li>
+              <li class="site-list__item">
+                <a> КАТАЛОГ ПРОДУКЦИИ </a>
+              </li>
+              <li class="site-list__item">
+                <a> ПОДБОР ПРОГРАММЫ </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="catalog">
