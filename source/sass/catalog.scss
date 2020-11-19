@@ -1,0 +1,22 @@
+.catalog-item,
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item__title {
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: $font;
+}
+
+.catalog-item__list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__title {
+  color: $dark;
+}
