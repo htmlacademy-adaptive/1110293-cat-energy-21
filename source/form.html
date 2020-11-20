@@ -2,12 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
@@ -27,13 +24,13 @@
           </button>
           <div class="main-nav__wrapper visually-hidden">
             <ul class="main-nav__list">
-              <li class="site-list__item site-list__item--active">
+              <li class="main-nav__item main-nav__item--active">
                 <a> ГЛАВНАЯ </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a> КАТАЛОГ ПРОДУКЦИИ </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a> ПОДБОР ПРОГРАММЫ </a>
               </li>
             </ul>
@@ -41,11 +38,11 @@
         </nav>
       </div>
     </header>
-    <main class="page-main center">
+    <main class="page-main">
       <h1 class="visually-hidden">Анкета для подбора программы питания</h1>
-      <section class="form">
-        <div class="page-main__wrapper">
-          <h2 class="form__title main-header">Подбор программы</h2>
+      <section class="form center">
+        <div class="form__wrapper">
+          <h2 class="form__title  block-title">Подбор программы</h2>
           <p class="form__subtitle">
             ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
           </p>
@@ -54,33 +51,33 @@
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <fieldset class="form__parameters">
-              <p class="form__item form-input">
+            <fieldset class="form__fieldset">
+              <p class="form__field form__field--input">
                 <label class="form__label" for="name-name">ИМЯ:*</label>
                 <input
-                  class="form__field"
+                  class="form__input"
                   id="name-name"
                   type="text"
                   name="name"
                   placeholder="БАРСИК"
                 />
               </p>
-              <p class="form__item form-input">
+              <p class="form__field form__field--input">
                 <label class="form__label" for="weight-weight"
                   >ВЕС (КГ):*</label
                 >
                 <input
-                  class="form__field"
+                  class="form__input"
                   id="weight-weight"
                   type="number"
                   name="weight"
                   placeholder="7"
                 />
               </p>
-              <p class="form__item form-input">
+              <p class="form__field form__field--input">
                 <label class="form__label" for="age-age">ВОЗРАСТ (ЛЕТ):</label>
                 <input
-                  class="form__field"
+                  class="form__input"
                   id="age-age"
                   type="number"
                   name="age"
@@ -88,8 +85,8 @@
                 />
               </p>
             </fieldset>
-            <fieldset class="form__program">
-              <p class="form__item form-radio">
+            <fieldset class="form__fieldset">
+              <p class="form__field form__field--radio">
                 <input
                   class="form__field-radio"
                   type="radio"
@@ -98,9 +95,9 @@
                   id="form-slim"
                   checked
                 />
-                <label for="form__label form-slim">ПОХУДЕНИЕ</label>
+                <label class="form__label" for="form-slim">ПОХУДЕНИЕ</label>
               </p>
-              <p class="form__item form-radio">
+              <p class="form__field form__field--radio">
                 <input
                   class="form__field-radio"
                   type="radio"
@@ -110,7 +107,7 @@
                 />
                 <label for="form__label form-weight">НАБОР МАССЫ</label>
               </p>
-              <p class="form__item form-radio">
+              <p class="form__field form__field--radio">
                 <input
                   class="form__field-radio"
                   type="radio"
@@ -123,22 +120,22 @@
                 >
               </p>
             </fieldset>
-            <fieldset class="form__contacts">
+            <fieldset class="form__fieldset">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <p class="form__item form-input">
+              <p class="form__field form__field--input">
                 <label class="form__label" for="mail-mail">E-MAIL:*</label>
                 <input
-                  class="mail-user"
+                  class="form__input"
                   id="mail-mail"
                   type="email"
                   name="mail"
                   placeholder="kuklachev@gmail.com"
                 />
               </p>
-              <p class="form__item form-input">
+              <p class="form__field form__field--input">
                 <label class="form__label" for="phone-phone">ТЕЛЕФОН:*</label>
                 <input
-                  class="login-icon-password"
+                  class="form__input"
                   id="phone-phone"
                   type="tel"
                   name="phone"
@@ -146,18 +143,18 @@
                 />
               </p>
             </fieldset>
-            <fieldset class="form__textarea">
+            <fieldset class="form__fieldset">
               <legend class="form__label form__legend">Комментарий</legend>
-              <p class="form__item form-input">
-                <label class="visually-hidden" for="form__textarea"></label>
+              <p class="form__field form__field--input">
+                <label class="form__label visually-hidden" for="form__textarea"></label>
                 <textarea id="textarea" class="form__textarea" rows="3">Расскажите обо всех повадках кота</textarea>
               </p>
             </fieldset>
-            <fieldset class="form__checkbox">
+            <fieldset class="form__fieldset">
               <legend class="form__label form__legend">Дополнительно</legend>
-              <p class="form__item form-checkbox">
+              <p class="form__field form__field--checkbox">
                 <input
-                  class="form-input-checkbox form-input"
+                  class="form-input form-input--checkbox"
                   type="checkbox"
                   name="sugar-substitute"
                   id="form-sugar-substitute"
@@ -165,27 +162,27 @@
                 />
                 <label for="form__label form-sugar-substitute">САХАРОЗАМЕНИТЕЛЬ</label>
               </p>
-              <p class="form__item form-checkbox">
+              <p class="form__field form__field--checkbox">
                 <input
-                  class="form-input-checkbox form-input"
+                  class="form-input form-input--checkbox"
                   type="checkbox"
                   name="water"
                   id="form-water"
                 />
                 <label for="form__label form-water">ПИТЬЕВАЯ ВОДА</label>
               </p>
-              <p class="form__item form-checkbox">
+              <p class="form__field form__field--checkbox">
                 <input
-                  class="form-input-checkbox form-input"
+                  class="form-input form-input--checkbox"
                   type="checkbox"
                   name="milk"
                   id="form-milk"
                 />
                 <label for="form__label form-milk">МОЛОКО</label>
               </p>
-              <p class="form__item form-checkbox">
+              <p class="form__field form__field--checkbox">
                 <input
-                  class="form-input-checkbox form-input"
+                  class="form-input form-input--checkbox"
                   type="checkbox"
                   name="vitamins"
                   id="form-vitamins"
@@ -211,7 +208,7 @@
         </div>
         <div class="page-footer__card">
           <img
-            class="page-footer__img"
+            class="page-footer__img-card"
             src="img/location.jpg"
             width="320"
             height="364"
@@ -221,7 +218,7 @@
         <div class="page-footer__bottom">
           <div class="page-footer__logo center">
             <img
-              class="page-footer__img"
+              class="page-footer__img-logo"
               src="img/logo2.png"
               width="128"
               height="24"
