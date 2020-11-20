@@ -1,7 +1,8 @@
 @import url(../css/normalize.css);
 @font-face {
   font-family: "Oswald";
-  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap"); }
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap; }
 
 .page {
   box-sizing: border-box; }
@@ -73,7 +74,7 @@
   line-height: 1;
   color: black; }
 
-.example__subtitle {
+.advantages__subtitle {
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   font-size: 36px;
@@ -110,12 +111,18 @@
   line-height: 0.8;
   text-transform: uppercase; }
 
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none; }
+
 .button {
   display: inline-block;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
-  color: #FFFFFF;
-  padding: 10px 0px;
+  color: #ffffff;
+  padding: 10px 0;
   min-width: 280px;
   line-height: 18px;
   text-align: center;
@@ -123,26 +130,26 @@
   text-transform: uppercase;
   border: none; }
 
-.catalog-item,
+.site-list__item,
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-.catalog-item__title {
+.site-list__title {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif; }
 
-.catalog-item__list {
+.site-list__list {
   font-size: 12px;
   line-height: 16px; }
 
 .catalog__title {
   color: black; }
 
-.main-header {
+.block-title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;

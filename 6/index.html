@@ -2,12 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
     <link href="css/style.css" rel="stylesheet" />
     <base href="https://htmlacademy-adaptive.github.io/1110293-cat-energy-21/6/">
 </head>
@@ -28,13 +25,13 @@
           </button>
           <div class="main-nav__wrapper visually-hidden">
             <ul class="main-nav__list">
-              <li class="site-list__item site-list__item--active">
+              <li class="main-nav__item main-nav__item--active">
                 <a> ГЛАВНАЯ </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a> КАТАЛОГ ПРОДУКЦИИ </a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a> ПОДБОР ПРОГРАММЫ </a>
               </li>
             </ul>
@@ -47,7 +44,7 @@
       <section class="program-header">
         <div class="program-header__wrapper">
           <div class="program-header__content center">
-            <h2 class="program-header__title main-header">Функциональное питание для котов</h2>
+            <h2 class="program-header__title block-title">Функциональное питание для котов</h2>
             <p class="program-header__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
           </div>
         </div>
@@ -81,7 +78,7 @@
       <section class="advantages">
         <div class="advantages__wrapper center">
           <h2 class="visually-hidden">Наше питание от Cat Energy</h2>
-          <h3 class="example__subtitle">Как это работает</h3>
+          <h3 class="advantages__subtitle">Как это работает</h3>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--useful">
               <p class="advantages__description">
@@ -150,7 +147,7 @@
                 alt="кот после приема пищи"
               />
             </div>
-            <p class="slider">
+            <p class="example__slider-input">
               <label for="volume">БЫЛО</label>
               <input type="range" id="volume" name="volume" min="0" max="11" />
               <label for="volume">СТАЛО</label>
@@ -170,7 +167,7 @@
         </div>
         <div class="page-footer__card">
           <img
-            class="page-footer__img"
+            class="page-footer__img-card"
             src="img/location.jpg"
             width="320"
             height="364"
@@ -180,7 +177,7 @@
         <div class="page-footer__bottom">
           <div class="page-footer__logo center">
             <img
-              class="page-footer__img"
+              class="page-footer__img-logo"
               src="img/logo2.png"
               width="128"
               height="24"
