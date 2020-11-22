@@ -1,3 +1,12 @@
 .example {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
   background-color: $background-color-block;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

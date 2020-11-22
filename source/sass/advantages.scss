@@ -1,3 +1,7 @@
+.advantages {
+  display: flex;
+}
+
 .advantages__subtitle {
   font-family: $font;
   text-align: center;
@@ -10,4 +14,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 250px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

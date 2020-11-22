@@ -5,3 +5,9 @@
   font-size: 36px;
   line-height: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .block-title {
+    font-size: 66px;
+  }
+}
