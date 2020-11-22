@@ -20,3 +20,16 @@
   line-height: 1;
   color: $dark;
 }
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    .program__item {
+      max-width: 570px;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

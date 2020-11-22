@@ -1,7 +1,9 @@
 @import "scss_fonts.scss";
+@import "scss_global.scss";
 @import "scss_normalize.scss";
 @import "_variables.scss";
 @import "page.scss";
+@import "page-main.scss";
 @import "center.scss";
 @import "page-header.scss";
 @import "program-header.scss";
@@ -13,3 +15,4 @@
 @import "button.scss";
 @import "catalog.scss";
 @import "block-title.scss";
+@import "contacts.scss";
