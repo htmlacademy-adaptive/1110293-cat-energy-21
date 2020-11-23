@@ -25,13 +25,13 @@
   line-height: 14px;
 }
 
+.program-header__button-wrapper {
+  margin-top: 138px;
+}
+
 @media (min-width: $tablet-width) {
   .program-header__wrapper {
     color: $dark;
     background-image: none;
   }
-}
-
-.program-header__button-wrapper {
-  margin-top: 138px;
 }

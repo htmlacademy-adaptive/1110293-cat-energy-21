@@ -19,15 +19,17 @@
 }
 
 .page-footer__bottom-wrapper {
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 150px;
-  }
-
   background-color: $background-color-block;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__bottom-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 150px;
+  }
 }

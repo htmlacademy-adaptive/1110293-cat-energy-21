@@ -1,8 +1,11 @@
 .example {
-  @media (min-width: $tablet-width) {
+  background-color: $background-color-block;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
     background-color: $white;
   }
-  background-color: $background-color-block;
 }
 
 @media (min-width: $desktop-width) {

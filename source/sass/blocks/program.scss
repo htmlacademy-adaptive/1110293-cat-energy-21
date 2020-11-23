@@ -1,5 +1,7 @@
 .program__item {
   background-color: $background-color-block;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .program__subtitle {
@@ -24,12 +26,10 @@
 .program__list {
   display: flex;
   flex-direction: column;
+}
 
-  @media (min-width: $desktop-width) {
-    .program__item {
-      max-width: 570px;
-    }
-    flex-direction: row;
-    justify-content: space-between;
+@media (min-width: $desktop-width) {
+  .program__item {
+    max-width: 570px;
   }
 }
