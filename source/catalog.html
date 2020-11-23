@@ -2,27 +2,41 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper center">
-        <a class="page-header__logo">
-          <img
-            src="img/logo-mobile.png"
-            width="33"
-            height="37"
-            alt="Питание для кошек «Кэт энерджи»"
-          />
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
+        <div class="page-header__container">
+          <a class="page-header__logo">
+            <img
+              src="img/logo-mobile.png"
+              width="33"
+              height="37"
+              alt="Питание для кошек «Кэт энерджи»"
+            />
+          </a>
+          <a class="page-header__logo">
+            <img
+              src="img/logo2.png"
+              width="101"
+              height="18"
+              alt="Питание для кошек «Кэт энерджи»"
+            />
+          </a>
+          <button class="page-header__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper visually-hidden">
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a> ГЛАВНАЯ </a>
@@ -269,10 +283,11 @@
         </div>
       </section>
       <section class="gif">
-        <h2 class="visually-hidden">Подародля для тех кто заказал дополнительные товары</h2>
+        <h2 class="visually-hidden">
+          Подародля для тех кто заказал дополнительные товары
+        </h2>
         <div class="gif__wrapper">
           <span>Закажите все и получите чехол для кота в подарок!</span>
-
         </div>
       </section>
     </main>
@@ -285,7 +300,7 @@
             г. Санкт-Петербург
           </p>
         </div>
-        <div class="page-footer__card">
+        <div class="page-footer__card center">
           <img
             class="page-footer__img-card"
             src="img/location.jpg"
@@ -295,47 +310,50 @@
           />
         </div>
         <div class="page-footer__bottom">
-          <div class="page-footer__logo center">
-            <img
-              class="page-footer__img-logo"
-              src="img/logo2.png"
-              width="128"
-              height="24"
-              alt="logo"
-            />
-          </div>
-          <div class="page-footer__social social center">
-            <b class="social__title">Давайте дружить!</b>
-            <ul class="social__list">
-              <li class="social__item">
-                <a
-                  class="social__link social__link--vkontakte"
-                  href="https://vk.com/htmlacademy"
-                  >Мы в Вконтакте</a
-                >
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--facebook"
-                  href="https://www.facebook.com/htmlacademy"
-                  >Мы в Фейсбуке</a
-                >
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--instagram"
-                  href="https://www.instagram.com/htmlacademy"
-                  >Мы в Инстаграме</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright center">
-            <b class="copyright__text">Разработано:</b>
-            <a
-              class="copyright__link"
-              href="https://htmlacademy.ru/intensive/adaptive"
-              >HTML Academy</a>
+          <div class="page-footer__bottom-wrapper center">
+            <div class="page-footer__logo">
+              <img
+                class="page-footer__img-logo"
+                src="img/logo2.png"
+                width="128"
+                height="24"
+                alt="logo"
+              />
+            </div>
+            <div class="page-footer__social social">
+              <b class="social__title">Давайте дружить!</b>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--vkontakte"
+                    href="https://vk.com/htmlacademy"
+                    >Мы в Вконтакте</a
+                  >
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--facebook"
+                    href="https://www.facebook.com/htmlacademy"
+                    >Мы в Фейсбуке</a
+                  >
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link social__link--instagram"
+                    href="https://www.instagram.com/htmlacademy"
+                    >Мы в Инстаграме</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <b class="copyright__text">Разработано:</b>
+              <a
+                class="copyright__link"
+                href="https://htmlacademy.ru/intensive/adaptive"
+                >HTML Academy</a
+              >
+            </div>
           </div>
         </div>
       </div>
