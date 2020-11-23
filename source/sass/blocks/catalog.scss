@@ -1,4 +1,5 @@
 .site-list__item,
+.site-list__product-item,
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -13,10 +14,121 @@
 }
 
 .site-list__list {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.site-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__button {
+    width: 244px;
+    max-height: 40px;
+  }
 }
 
 .catalog__title {
   color: $dark;
+}
+
+.site-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-column-gap: 60px;
+  grid-row-gap: 100px;
+}
+
+.site-list__product-item {
+  display: block;
+}
+
+.additional-goods__title {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1;
+  width: 100%;
+}
+
+.gif {
+  min-height: 289px;
+  background-color: green;
+  margin-top: 40px;
+}
+
+.additional-goods {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__wrapper {
+    min-width: 895px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gif {
+    max-width: 245px;
+    height: 289px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gif {
+    min-height: 220px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__list {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__product-item {
+    padding: 38px;
+    min-height: 430px;
+    background-color: $background-color-block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    grid-template-columns: repeat(auto-fill, 324px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    grid-template-columns: repeat(auto-fill, 245px);
+  }
 }
