@@ -10,4 +10,12 @@
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:active {
+    color: $button-active-color;
+  }
 }

@@ -1,11 +1,24 @@
+.page-footer__bottom-wrapper {
+  padding-top: 39px;
+  background-color: $background-color-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .contacts__title {
   font-size: 16px;
   font-family: $font;
   text-transform: uppercase;
+  font-weight: normal;
+  color: $dark;
+  max-width: 140px;
 }
 
 .contacts__text {
   line-height: 20px;
+  margin: 0;
 }
 
 .page-footer__card {
@@ -18,12 +31,46 @@
   background-color: $background-color-block;
 }
 
-.page-footer__bottom-wrapper {
-  background-color: $background-color-block;
+.page-footer__logo {
+  padding-bottom: 32px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 0 0 $program__subtitle-shadow-color;
+}
+
+.social {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding: 25px 0;
   justify-content: center;
+  box-shadow: 0 2px 0 0 $program__subtitle-shadow-color;
+}
+
+.social__list {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $special_dark-grey;
+}
+
+.copyright {
+  display: flex;
+  padding: 22px 0;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.social-icon {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,5 +78,21 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 150px;
+    box-shadow: none;
+    padding-top: 0;
+  }
+
+  .social {
+    box-shadow: none;
+  }
+
+  .page-footer__logo {
+    box-shadow: none;
+    padding: 0;
+    max-width: 128px;
+  }
+
+  .copyright {
+    max-width: 163px;
   }
 }
