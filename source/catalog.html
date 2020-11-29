@@ -30,21 +30,29 @@
               alt="Питание для кошек «Кэт энерджи»"
             />
           </a>
-          <button class="page-header__toogle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div
+            class="page-header__button-wrapper page-header--closed main-nav--nojs"
+          >
+            <button class="page-header__toogle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav page-header--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
-                <a> ГЛАВНАЯ </a>
+                <a href="index.html" class="main-nav__link">ГЛАВНАЯ </a>
               </li>
               <li class="main-nav__item">
-                <a> КАТАЛОГ ПРОДУКЦИИ </a>
+                <a href="catalog.html" class="main-nav__link"
+                  >КАТАЛОГ ПРОДУКЦИИ
+                </a>
               </li>
-              <li class="main-nav__item"><a> ПОДБОР ПРОГРАММЫ</a></li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">ПОДБОР ПРОГРАММЫ </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -357,5 +365,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/navigation.js"></script>
   </body>
 </html>
