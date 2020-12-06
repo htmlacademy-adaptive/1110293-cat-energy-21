@@ -1,0 +1,228 @@
+.additional-goods {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+}
+
+.additional-goods__title {
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1;
+  width: 100%;
+}
+
+.additional-goods-list__title {
+  text-align: left;
+  margin: 0 0 13px 0;
+  min-width: 280px;
+}
+
+.additional-goods__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 98px;
+  padding: 13px 0 19px 0;
+
+  .site-list__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid $special_dark-grey-3;
+  }
+}
+
+.additional-goods__item .button {
+  margin: auto 0 0 0;
+  width: 100%;
+  max-height: 20px;
+}
+
+.gif {
+  max-height: 289px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.gif__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding: 58px 60px 33px 60px;
+}
+
+.gif__text {
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: "Arial";
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gif {
+    max-height: 200px;
+    margin-top: 70px;
+    background-image: url("../../img/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .gif__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 58px 124px 33px 80px;
+  }
+
+  .gif__text {
+    max-width: 162px;
+    text-align: left;
+  }
+
+  .additional-list {
+    margin-top: 80px;
+  }
+
+  .additional-goods {
+    margin-top: 68px;
+  }
+
+  .additional-goods__item {
+    padding: 26px 38px 28px 38px;
+    min-height: 84px;
+    min-width: 634px;
+    outline: 1px solid $special_dark-grey-3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &::after {
+      border-top: none;
+    }
+
+    .site-list__list {
+      margin-left: auto;
+    }
+
+    .site-list__description {
+      margin-left: 51px;
+    }
+  }
+
+  .additional-goods__title {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+
+  .additional-goods__wrapper {
+    margin-top: 81px;
+    display: flex;
+  }
+
+  .additional-list {
+    margin-top: 0;
+  }
+
+  .additional-goods__item {
+    flex-direction: row;
+    min-width: 895px;
+    min-height: 43px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 15px 0;
+    outline: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid $special_dark-grey-3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 72px;
+      width: 100%;
+      border-top: 1px solid $special_dark-grey-3;
+    }
+  }
+
+  .additional-goods__item .button {
+    width: 244px;
+    max-height: 20px;
+    margin-top: 0;
+  }
+
+  .additional-goods__item .site-list__list {
+    width: 286px;
+    margin-right: 40px;
+  }
+
+  .gif {
+    max-height: 289px;
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+    background-image: url("../../img/gift-photo-mobile.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    }
+  }
+
+  .additional-goods-list__title {
+    margin: 0 auto;
+  }
+
+  .site-list__product-item .site-list__information {
+    min-width: 168px;
+  }
+
+  .gif__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 58px 60px 33px 60px;
+  }
+
+  .gif__text {
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: "Arial";
+    text-align: center;
+  }
+}
