@@ -43,10 +43,10 @@
         <nav class="main-nav page-header--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a href="#" class="main-nav__link">ГЛАВНАЯ </a>
-              </li>
               <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">ГЛАВНАЯ </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
                 <a href="catalog.html" class="main-nav__link"
                   >КАТАЛОГ ПРОДУКЦИИ
                 </a>
@@ -59,9 +59,9 @@
         </nav>
       </div>
     </header>
-    <main class="page-main center">
+    <main class="page-main">
       <section class="catalog">
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper center">
           <h2 class="catalog__title block-title">Каталог продукции</h2>
           <ul class="catalog__list site-list">
             <li class="site-list__product-item">
@@ -292,8 +292,10 @@
         </div>
       </section>
       <section class="additional-goods">
-        <h2 class="additional-goods__title">Дополнительные товары</h2>
-        <div class="additional-goods__wrapper">
+        <div class="additional-goods__title__wrapper">
+          <h2 class="additional-goods__title">Дополнительные товары</h2>
+        </div>
+        <div class="additional-goods__wrapper center">
           <ul class="catalog__list additional-list">
             <li class="additional-goods__item">
               <h3 class="site-list__title additional-goods-list__title">
@@ -359,8 +361,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__wrapper__contacts center">
-          <div class="page-footer__contacts contacts">
+        <div class="page-footer__wrapper__contacts">
+          <div class="page-footer__contacts contacts center">
             <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
             <p class="contacts__text">
               ул. Большая Конюшенная 19/8<br />
@@ -372,13 +374,11 @@
           <picture class="page-footer__img-card">
             <source
               media="(min-width: 1440px)"
-              srcset="img/map-big.jpg"
-              srcset="img/map-big2x.jpg 2x"
+              srcset="img/map-big.jpg 1x, img/map-big2x.jpg 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/Map.jpg"
-              srcset="img/Map2x.jpg 2x"
+              srcset="img/Map.jpg 1x, img/Map2.jpg 2x"
             />
             <img
               src="img/location.jpg"
