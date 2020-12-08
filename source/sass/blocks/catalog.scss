@@ -52,7 +52,7 @@
 
 .site-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   grid-column-gap: 60px;
 }
 
@@ -64,7 +64,7 @@
 
 .site-list__information {
   margin-left: auto;
-  min-width: 142px;
+  width: 142px;
   margin-bottom: 22px;
 }
 
@@ -94,7 +94,7 @@
   }
 
   .button {
-    width: 279px;
+    width: 100%;
     height: 40px;
     background-color: $basic_grey;
     color: $special_dark-grey;
@@ -145,7 +145,6 @@
   }
 
   .site-list__product-item .button {
-    width: 248px;
     height: 20px;
     margin-top: auto;
   }
@@ -166,7 +165,7 @@
   }
 
   .site-list {
-    grid-template-columns: repeat(auto-fill, 324px);
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
     grid-row-gap: 100px;
   }
 
@@ -200,8 +199,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    grid-template-columns: repeat(auto-fill, 245px);
-    grid-column-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   }
 
   .site-list__product-item .button {

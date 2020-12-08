@@ -256,12 +256,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    padding: 0 110px;
-    margin: 0 auto;
-    max-width: 1220px;
-  }
-
   .form__program-wrapper {
     display: flex;
     flex-direction: row;
