@@ -9,10 +9,11 @@
 
 .contacts__title {
   font-size: 16px;
+  line-height: 1.2;
   font-family: $font;
   text-transform: uppercase;
   font-weight: normal;
-  color: $dark;
+  color: #111111;
   max-width: 140px;
 }
 
@@ -76,10 +77,24 @@
 @media (min-width: $tablet-width) {
   .page-footer__bottom-wrapper {
     flex-direction: row;
+
     justify-content: space-between;
     min-height: 150px;
     box-shadow: none;
     padding-top: 0;
+  }
+
+  .contacts {
+    height: 200px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    width: 155px;
   }
 
   .social {
@@ -94,5 +109,26 @@
 
   .copyright {
     max-width: 163px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper__contacts {
+    position: relative;
+  }
+
+  .page-footer__wrapper .contacts {
+    background-color: $button-text-color;
+  }
+
+  .page-footer__contacts {
+    position: absolute;
+
+    left: 155px;
+    top: 100px;
+    background-color: red;
+    width: 405px;
+    height: 201px;
+    padding: 0 89px 0 76px;
   }
 }

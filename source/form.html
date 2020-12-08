@@ -42,7 +42,7 @@
         <nav class="main-nav page-header--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a href="index.html" class="main-nav__link">ГЛАВНАЯ </a>
               </li>
               <li class="main-nav__item">
@@ -50,7 +50,7 @@
                   >КАТАЛОГ ПРОДУКЦИИ
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a href="form.html" class="main-nav__link">ПОДБОР ПРОГРАММЫ </a>
               </li>
             </ul>
@@ -267,21 +267,33 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts center">
-          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__text">
-            ул. Большая Конюшенная 19/8<br />
-            г. Санкт-Петербург
-          </p>
+        <div class="page-footer__wrapper__contacts center">
+          <div class="page-footer__contacts contacts">
+            <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts__text">
+              ул. Большая Конюшенная 19/8<br />
+              г. Санкт-Петербург
+            </p>
+          </div>
         </div>
         <div class="page-footer__card center">
-          <img
-            class="page-footer__img-card"
-            src="img/location.jpg"
-            width="320"
-            height="364"
-            alt="ул. Большая Конюшенная 19/8 г. Санкт-Петербург"
-          />
+          <picture class="page-footer__img-card">
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/map-big.jpg"
+              srcset="img/map-big2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/Map.jpg"
+              srcset="img/Map2x.jpg 2x"
+            />
+            <img
+              src="img/location.jpg"
+              alt="ул. Большая Конюшенная 19/8 г. Санкт-Петербург"
+              srcset="img/location2x.jpg 2x"
+            />
+          </picture>
         </div>
         <div class="page-footer__bottom">
           <div class="page-footer__bottom-wrapper center">
