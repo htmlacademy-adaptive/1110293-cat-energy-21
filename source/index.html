@@ -15,20 +15,19 @@
       <div class="page-header__wrapper center">
         <div class="page-header__container">
           <a class="page-header__logo">
-            <img
-              src="img/logo-mobile.png"
-              width="33"
-              height="37"
-              alt="Питание для кошек «Кэт энерджи»"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo-desktop.svg"
+              />
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+              <img src="img/logo-mobile.svg" alt="Кэт энерджи" />
+            </picture>
           </a>
-          <a class="page-header__logo">
-            <img
-              src="img/logo2.png"
-              width="101"
-              height="18"
-              alt="Питание для кошек «Кэт энерджи»"
-            />
+          <a class="page-header__logo page-header__logo__second">
+            <picture>
+              <img src="img/logo2.svg" alt="Кэт энерджи" />
+            </picture>
           </a>
           <div
             class="page-header__button-wrapper page-header--closed main-nav--nojs"
@@ -42,16 +41,24 @@
         <nav class="main-nav page-header--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a href="#" class="main-nav__link">ГЛАВНАЯ </a>
+              <li
+                class="main-nav__item main-nav__item__index main-nav__item--active"
+              >
+                <a href="#" class="main-nav__link main-nav__link__index"
+                  >ГЛАВНАЯ
+                </a>
               </li>
               <li class="main-nav__item">
-                <a href="catalog.html" class="main-nav__link"
+                <a
+                  href="catalog.html"
+                  class="main-nav__link main-nav__link__index"
                   >КАТАЛОГ ПРОДУКЦИИ
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link">ПОДБОР ПРОГРАММЫ </a>
+                <a href="form.html" class="main-nav__link main-nav__link__index"
+                  >ПОДБОР ПРОГРАММЫ
+                </a>
               </li>
             </ul>
           </div>
@@ -62,20 +69,29 @@
       <h1 class="visually-hidden">Питание для кошек «Кэт энерджи»</h1>
       <section class="program-header center">
         <div class="program-header__wrapper">
-          <div class="program-header__content">
+          <div class="program-header__content center">
             <h2 class="program-header__title block-title">
               Функциональное питание для котов
             </h2>
             <p class="program-header__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
           </div>
         </div>
-        <img
-          class="program-header__img"
-          src="img/cat-box.svg"
-          width="270"
-          height="280"
-          alt="Питание для кошек «Кэт энерджи»"
-        />
+
+        <picture class="program-header__picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/index-can.png 1x, img/index-can@2x.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x"
+          />
+          <img
+            class="program-header__img"
+            src="img/index-can-mobile.svg"
+            alt="Питание для кошек «Кэт энерджи»"
+          />
+        </picture>
 
         <div class="program-header__button-wrapper center">
           <a class="button" href="catalog.html">ПОДОБРАТЬ ПРОГРАММУ</a>
@@ -85,7 +101,9 @@
         <div class="program__wrapper center">
           <div class="program__list">
             <div class="program__item program__item--cat">
-              <h3 class="program__subtitle">ПОХУДЕНИЕ</h3>
+              <h3 class="program__subtitle program__subtitle__slim">
+                ПОХУДЕНИЕ
+              </h3>
               <p class="program__description">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
@@ -102,7 +120,9 @@
               /></a>
             </div>
             <div class="program__item program__item--cat-walk">
-              <h3 class="program__subtitle">НАБОР МАССЫ</h3>
+              <h3 class="program__subtitle program__subtitle__pro">
+                НАБОР МАССЫ
+              </h3>
               <p class="program__description">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -244,7 +264,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__wrapper__contacts center">
+        <div
+          class="page-footer__wrapper__contacts page-footer__wrapper__contacts_index center"
+        >
           <div class="page-footer__contacts contacts">
             <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
             <p class="contacts__text">
@@ -257,13 +279,11 @@
           <picture class="page-footer__img-card">
             <source
               media="(min-width: 1440px)"
-              srcset="img/map-big.jpg"
-              srcset="img/map-big2x.jpg 2x"
+              srcset="img/map-big.jpg 1x, img/map-big2x.jpg 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/Map.jpg"
-              srcset="img/Map2x.jpg 2x"
+              srcset="img/Map.jpg 1x, img/Map2.jpg 2x"
             />
             <img
               src="img/location.jpg"
