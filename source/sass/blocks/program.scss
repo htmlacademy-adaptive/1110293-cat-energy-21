@@ -27,11 +27,11 @@
     width: 50px;
     background-size: cover;
 
-    background-image: url("../../img/cat_back.png");
+    background-image: url("./../../img/cat_back.png");
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/cat_back@2x.png");
+      background-image: url("./../../img/cat_back@2x.png");
     }
   }
 }
@@ -48,11 +48,11 @@
     width: 67px;
     background-size: cover;
 
-    background-image: url("../../img/cat_walk.png");
+    background-image: url("./../../img/cat_walk.png");
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/cat_walk@2x.png");
+      background-image: url("./../../img/cat_walk@2x.png");
     }
   }
 }
@@ -119,10 +119,10 @@
       left: 400px;
       height: 211px;
       width: 200px;
-      background-image: url("../../img/cat_back_tablet.png");
+      background-image: url("./../../img/cat_back_tablet.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat_back_tablet@2x.png");
+        background-image: url("./../../img/cat_back_tablet@2x.png");
       }
     }
   }
@@ -133,10 +133,10 @@
       left: 370px;
       height: 200px;
       width: 268px;
-      background-image: url("../../img/cat_walk_tablet.png");
+      background-image: url("./../../img/cat_walk_tablet.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat_walk_tablet@2x.png");
+        background-image: url("./../../img/cat_walk_tablet@2x.png");
       }
     }
   }
@@ -174,11 +174,11 @@
       height: 106px;
       width: 100px;
 
-      background-image: url("../../img/cat_back_desktop.png");
+      background-image: url("./../../img/cat_back_desktop.png");
       background-repeat: no-repeat;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat_back_desktop@2x.png");
+        background-image: url("./../../img/cat_back_desktop@2x.png");
       }
     }
   }
@@ -192,11 +192,11 @@
       height: 100px;
       width: 134px;
 
-      background-image: url("../../img/cat_walk_desktop.png");
+      background-image: url("./../../img/cat_walk_desktop.png");
       background-repeat: no-repeat;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat_walk_desktop@2x.png");
+        background-image: url("./../../img/cat_walk_desktop@2x.png");
       }
     }
   }
