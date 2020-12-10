@@ -465,7 +465,7 @@
       background-repeat: no-repeat; } }
     @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
       .program__subtitle__pro::after {
-        background-image: url("./../../img/cat-walk-desktop@2x.png"); } }
+        background-image: url("./../img/cat-walk-desktop@2x.png"); } }
 
 .advantages__wrapper {
   padding-top: 27px; }
