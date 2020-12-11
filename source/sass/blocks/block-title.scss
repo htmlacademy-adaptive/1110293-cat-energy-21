@@ -4,11 +4,12 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 1;
-  text-align: left;
 }
 
 @media (min-width: $tablet-width) {
   .block-title {
     font-size: 60px;
+    text-align: left;
+    word-break: break-word;
   }
 }
