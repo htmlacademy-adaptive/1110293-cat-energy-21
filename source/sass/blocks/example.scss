@@ -52,6 +52,8 @@
 
 .example__description {
   font-size: 14px;
+  line-height: 1.3;
+  padding-bottom: 12px;
 }
 
 .parameter__description {
@@ -78,13 +80,183 @@
   font-family: $font;
 }
 
-.parameter {
-  margin-right: 10px;
+
+.slayden-savnena {
+  margin: 1vw auto;
+  height: 260px;
+  width: 311px;
+  overflow: visible;
+  position: relative;
 }
 
-@media (min-width: $tablet-width) {
-  .example {
+.slayden-savnena figure {
+  height: 270px;
+  width: 300px;
+  background-image: url("../../img/after-mobile.png");
+  background-size: cover;
+  font-size: 0;
+  margin: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+}
+
+.kobavenusab {
+  height: 235px;
+  width: 300px;
+  background-image: url("../../img/before-mobile.png");
+  background-size: cover;
+  bottom: 0;
+  border-right: 1px solid rgba(243, 240, 240, 0.7);
+  box-shadow: 1px 0 0 -5px #171717;
+  overflow: visible;
+  position: absolute;
+}
+
+.example__slider-wrapper {
+  min-height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__slider-volume {
+  width: 84px;
+  overflow: hidden;
+  appearance: none;
+  background-color: $white;
+  border: 4px solid $white;
+  border-radius: 6px;
+  height: 6px;
+
+
+  &::-webkit-slider-runnable-track {
+    height: 10px;
+    appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+
+  &::-webkit-slider-thumb {
+    width: 1px;
+    appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: $background-color;
+    box-shadow: -80px 0 0 80px $background-color;
+  }
+
+  &::-moz-range-progress {
+    background-color: $background-color;
+  }
+
+  &::-moz-range-track {
     background-color: $white;
+  }
+
+  &::-ms-fill-lower {
+    background-color: $background-color;
+  }
+
+  &::-ms-fill-upper {
+    background-color: $white;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .example__description {
+    background-color: $white;
+  }
+
+
+  .example__slider-volume {
+    width: 428px;
+    overflow: visible;
+    appearance: none;
+    background-color: $form-radio-color;
+    border: none;
+    border-radius: 6px;
+    height: 6px;
+
+
+    &::-webkit-slider-runnable-track {
+      height: 10px;
+      appearance: none;
+      color: white;
+      margin-top: -29px;
+      border: white;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 38px;
+      height: 38px;
+      cursor: ew-resize;
+      box-shadow: none;
+      background: url("../../img/slider-control.svg");
+    }
+
+    &::-moz-range-progress {
+      background-color: $background-color;
+    }
+
+    &::-moz-range-track {
+      background-color: $white;
+    }
+
+    &::-ms-fill-lower {
+      background-color: $background-color;
+    }
+
+    &::-ms-fill-upper {
+      background-color: $white;
+    }
+  }
+
+  .example {
+    background-color: $form-radio-color;
+  }
+
+  .example__slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 462px;
+  }
+
+  .example__slider {
+    position: relative;
+    width: 100%;
+    background-color: $background-color-block;
+  }
+
+  .slayden-savnena figure {
+    height: 500px;
+    width: 560px;
+    background-image: url("../../img/cat-skinny-tablet.png");
+    position: absolute;
+    top: 20px;
+    left: 130px;
+  }
+
+  .kobavenusab {
+    height: 500px;
+    width: 440px;
+    background-image: url("../../img/cat-fat-tablet.png");
+    top: 30px;
+    left: -100px;
+    border-right: 1px solid rgba(243, 240, 240, 0.7);
+    box-shadow: 1px 0 0 -1px #171717;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .slayden-savnena {
+    height: 580px;
+    margin: 1vw auto;
+    width: 910px;
+    position: absolute;
+    top: -200px;
   }
 
   .parameter__description {
@@ -95,13 +267,18 @@
   }
 
   .example__wrapper {
-    padding-top: 43px;
+    padding-top: 0;
+  }
+
+  .example__slider-input {
+    margin-bottom: 70px;
   }
 
   .example__subtitle {
     font-size: 60px;
     line-height: 1;
     padding-bottom: 49px;
+    padding-top: 40px;
   }
 
   .parameter {
@@ -135,35 +312,59 @@
     padding-top: 0;
     text-align: end;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .example__slider-wrapper {
-    background-color: $background-color-block;
-    min-height: 462px;
+  .example__description_wrapper {
+    padding-bottom: 250px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .advantages__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .example__description_wrapper {
+    padding-bottom: 15px;
+  }
+
+  .example__subtitle {
+    padding-bottom: 150px;
+    position: absolute;
+    top: -210px;
+    z-index: 100;
+    padding-top: 0;
+  }
+
   .example__wrapper {
     display: flex;
     padding: 0 20px;
+    padding-top: 70px;
     margin: 0 auto;
     max-width: 1220px;
     justify-content: space-between;
   }
 
+  .example__wrapper-container {
+    background-color: $background-color-block;
+  }
+
   .example__slider-wrapper {
-    background-color: $white;
+    background-color: $background-color-block;
     min-height: 0;
+    margin-top: 280px;
+    margin-right: 50px;
+  }
+
+
+  .example__slider {
+    height: 395px;
+    width: 590px;
   }
 
   .example__list {
     max-width: 500px;
+    margin-top: 65px;
   }
 
   .example__price-wrapper {
@@ -174,20 +375,48 @@
 
   .example__item-price {
     margin-left: 90px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .example__description-subtitle {
     max-width: 436px;
+    line-height: 1.5;
   }
 
   .example__description {
-    margin: 0 0 69px 0;
+    margin: 0;
     padding: 0;
+    position: relative;
+    background-color: $background-color-block;
   }
 
   .example__images {
     margin: 0;
     padding: 0;
+  }
+
+  .example {
+    padding-top: 180px;
+    background-color: $white;
+  }
+
+  .parameter__description {
+    top: -11px;
+    left: -22px;
+    background-color: $background-color-block;
+    margin-bottom: 0;
+  }
+
+  .slayden-savnena figure {
+    height: 500px;
+    width: 560px;
+
+    top: -90px;
+    left: 15px;
+  }
+
+  .kobavenusab {
+    top: 20px;
+    left: -60px;
   }
 }

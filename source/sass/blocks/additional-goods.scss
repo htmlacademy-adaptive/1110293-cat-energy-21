@@ -8,9 +8,14 @@
 
 .container {
   max-width: 1300px;
-  padding-left: 40px;
-  padding-right: 40px;
+
   margin: 0 auto;
+}
+
+@media (min-width: $mobile-width-only) {
+  .container {
+    padding-left: 20px;
+  }
 }
 
 .extra__wrapper {
@@ -20,7 +25,7 @@
     content: "";
     background-color: $button-color;
     position: absolute;
-    top: 60px;
+    top: 15px;
     right: 0;
     z-index: -1;
     width: 100%;
@@ -29,8 +34,8 @@
 }
 
 .additional-goods__title {
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-left: 20px;
+  padding-right: 30px;
   font-size: 24px;
   line-height: 1;
   background-color: $button-text-color;
@@ -38,12 +43,15 @@
   font-family: $font;
   font-weight: 400;
   display: inline-flex;
+  padding-bottom: 36px;
+  margin: 0;
 }
 
 .additional-goods-list__title {
   text-align: left;
-  margin: 0 0 13px 0;
+  margin: 0 0 0 0;
   min-width: 280px;
+  padding-bottom: 10px;
 }
 
 .additional-goods__item {
@@ -63,6 +71,15 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 100%;
+    border-top: 1px solid $special_dark-grey-3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 100%;
     border-top: 1px solid $special_dark-grey-3;
   }
@@ -103,6 +120,12 @@
   text-align: center;
 }
 
+@media (min-width: $mobile-width-only) {
+  .additional-goods__title {
+    padding-top: 20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .gif {
     max-height: 200px;
@@ -114,11 +137,22 @@
     }
   }
 
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .gif__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 58px 124px 33px 80px;
+  }
+
+  .extra__wrapper {
+    &::before {
+      top: 40px;
+    }
   }
 
   .gif__text {
@@ -131,7 +165,8 @@
   }
 
   .additional-goods {
-    margin-top: 68px;
+    margin-top: 24px;
+    padding-bottom: 80px;
   }
 
   .additional-goods__item {
@@ -158,14 +193,15 @@
 
   .additional-goods__title {
     font-size: 36px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods {
     flex-direction: column;
-
-    margin-bottom: 86px;
+    margin-top: 35px;
+    margin-bottom: 10px;
   }
 
   .additional-goods__wrapper {

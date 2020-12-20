@@ -35,8 +35,14 @@
     color: $dark;
     background-image: none;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 55px;
     height: 80px;
+    padding-left: 10px;
+  }
+
+  .program-header__button-wrapper {
+    margin-top: 148px;
+    margin-left: 5px;
   }
 
   .program-header {
@@ -45,7 +51,7 @@
 
   .program-header__slogan {
     text-align: left;
-    padding-top: 27px;
+    padding-top: 20px;
     font-size: 20px;
     line-height: 1;
   }
@@ -56,8 +62,8 @@
   }
 
   .program-header__img {
-    left: -70px;
-    top: 260px;
+    left: -45px;
+    top: 255px;
     z-index: -1;
   }
 
@@ -79,6 +85,10 @@
     height: 80px;
     width: 1200px;
     padding-top: 0;
+
+    .center {
+      padding-left: 12px;
+    }
   }
 
   .program-header {
@@ -90,8 +100,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: -80px;
-      left: 650px;
+      top: -115px;
+      left: 655px;
       height: 694px;
       width: 720px;
       background-size: cover;
@@ -108,8 +118,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: -80px;
-      left: 650px;
+      top: -115px;
+      left: 655px;
       height: 694px;
       width: 720px;
       background: rgba(104, 183, 56, 0.85);
@@ -118,7 +128,11 @@
   }
 
   .program-header__img {
-    left: 450px;
-    top: 100px;
+    left: 490px;
+    top: 23px;
+  }
+
+  .program {
+    margin-top: 0;
   }
 }

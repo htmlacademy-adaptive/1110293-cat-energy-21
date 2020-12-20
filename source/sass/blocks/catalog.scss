@@ -23,6 +23,16 @@
     width: 320px;
     border-top: 1px solid $special_dark-grey-3;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    left: -20px;
+    width: 320px;
+    border-top: 1px solid $special_dark-grey-3;
+  }
 }
 
 .site-list__title {
@@ -58,14 +68,15 @@
 
 .site-list__picture {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 35px;
+  top: 30px;
 }
 
 .site-list__information {
   margin-left: auto;
   width: 142px;
   margin-bottom: 22px;
+  margin-top: 7px;
 }
 
 .site-list__product-item .button {
@@ -79,7 +90,7 @@
 }
 
 .site-list__more {
-  min-height: 152px;
+  min-height: 131px;
   padding: 76px 0 0 0;
   margin: 0;
   text-align: center;
@@ -95,17 +106,32 @@
 
   .button {
     width: 100%;
-    height: 40px;
+    height: 25px;
     background-color: $basic_grey;
     color: $special_dark-grey;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      background-color: $hover_grey;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .site-list__picture__more {
-    left: 130px;
+    left: 125px;
+    top: 25px;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .catalog__title {
+    padding-bottom: 145px;
   }
 }
 
@@ -115,6 +141,10 @@
     max-width: 150px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .catalog__title {
+    padding-bottom: 55px;
   }
 
   .site-list__params {
@@ -131,8 +161,8 @@
   }
 
   .site-list__picture {
-    left: 90px;
-    top: -50px;
+    left: 83px;
+    top: -47px;
   }
 
   .site-list__information {
@@ -147,6 +177,7 @@
   .site-list__product-item .button {
     height: 20px;
     margin-top: auto;
+    width: 248px;
   }
 
   .site-list__list {
@@ -162,11 +193,15 @@
     &::after {
       border-top: none;
     }
+
+    &::before {
+      border-top: none;
+    }
   }
 
   .site-list {
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
-    grid-row-gap: 100px;
+    grid-row-gap: 142px;
   }
 
   .site-list__item {
@@ -180,12 +215,13 @@
     border: 2px solid $basic_grey;
 
     .site-list__picture__more {
-      top: 40px;
+      top: 52px;
     }
 
     .site-list__title {
       max-width: 134px;
-      margin: 23px auto;
+      margin: 0 auto;
+      padding-bottom: 20px;
     }
 
     .site-list__text {
