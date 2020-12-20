@@ -92,7 +92,7 @@
 .slayden-savnena figure {
   height: 270px;
   width: 300px;
-  background-image: url("../../img/after-mobile.png");
+  background-image: url("./../img/after-mobile.png");
   background-size: cover;
   font-size: 0;
   margin: 0;
@@ -104,7 +104,7 @@
 .kobavenusab {
   height: 235px;
   width: 300px;
-  background-image: url("../../img/before-mobile.png");
+  background-image: url("./../img/before-mobile.png");
   background-size: cover;
   bottom: 0;
   border-right: 1px solid rgba(243, 240, 240, 0.7);
@@ -193,7 +193,7 @@
       height: 38px;
       cursor: ew-resize;
       box-shadow: none;
-      background: url("../../img/slider-control.svg");
+      background: url("./../img/slider-control.svg");
     }
 
     &::-moz-range-progress {
@@ -233,7 +233,7 @@
   .slayden-savnena figure {
     height: 500px;
     width: 560px;
-    background-image: url("../../img/cat-skinny-tablet.png");
+    background-image: url("./../img/cat-skinny-tablet.png");
     position: absolute;
     top: 20px;
     left: 130px;
@@ -242,7 +242,7 @@
   .kobavenusab {
     height: 500px;
     width: 440px;
-    background-image: url("../../img/cat-fat-tablet.png");
+    background-image: url("./../img/cat-fat-tablet.png");
     top: 30px;
     left: -100px;
     border-right: 1px solid rgba(243, 240, 240, 0.7);
