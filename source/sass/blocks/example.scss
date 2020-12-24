@@ -141,7 +141,7 @@
     width: 1px;
     appearance: none;
     height: 10px;
-    cursor: ew-resize;
+    cursor: pointer;
     background: $background-color;
     box-shadow: -80px 0 0 80px $background-color;
   }
@@ -178,7 +178,7 @@
     border: none;
     border-radius: 6px;
     height: 6px;
-
+    cursor: pointer;
 
     &::-webkit-slider-runnable-track {
       height: 10px;
@@ -186,6 +186,7 @@
       color: white;
       margin-top: -29px;
       border: white;
+
     }
 
     &::-webkit-slider-thumb {

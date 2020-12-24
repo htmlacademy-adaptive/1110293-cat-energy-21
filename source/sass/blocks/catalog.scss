@@ -58,7 +58,9 @@
 
 .catalog__title {
   color: $dark;
+  text-align: left;
 }
+
 
 .site-list {
   display: grid;
@@ -143,8 +145,10 @@
     margin: 0 auto;
   }
 
+
   .catalog__title {
-    padding-bottom: 55px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 
   .site-list__params {
