@@ -7,14 +7,16 @@
   font-weight: medium;
 }
 
+
+
 .logo-mobile {
   width: 33px;
   height: 37px;
 }
 
 .page-header__logo-image {
-  height: 38px;
-  width: 200px;
+  height: 52px;
+  width: 174px;
 
   &:hover {
     opacity: 0.8;
@@ -51,6 +53,11 @@
 @media (max-width: $mobile-width-only) {
   .block-title {
     padding-bottom: 42px;
+  }
+
+  .page-header__logo-image {
+    min-height: 38px;
+    min-width: 200px;
   }
 
   .page-header--opened .page-header__toogle {
@@ -118,6 +125,11 @@
   .page-header__wrapper {
     flex-direction: row;
     padding-top: 20px;
+  }
+
+  .page-header__logo-image {
+    min-height: 52px;
+    min-width: 174px;
   }
 
 
