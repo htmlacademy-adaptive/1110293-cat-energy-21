@@ -6,7 +6,11 @@
 .program-header__img {
   position: absolute;
   left: 20px;
-  top: 160px;
+  top: 170px;
+}
+
+.block-title {
+  padding-bottom: 15px;
 }
 
 .program-header__wrapper {
@@ -59,6 +63,7 @@
   .program-header__wrapper .block-title {
     width: 550px;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .program-header__img {
