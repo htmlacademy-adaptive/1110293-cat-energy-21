@@ -21,3 +21,18 @@
     color: $button-active-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 280px;
+    height: 52px;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 568px;
+  }
+}

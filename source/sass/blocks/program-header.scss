@@ -6,12 +6,9 @@
 .program-header__img {
   position: absolute;
   left: 20px;
-  top: 170px;
+  top: 190px;
 }
 
-.block-title {
-  padding-bottom: 15px;
-}
 
 .program-header__wrapper {
   color: $white;
@@ -45,7 +42,7 @@
   }
 
   .program-header__button-wrapper {
-    margin-top: 148px;
+    margin-top: 198px;
     margin-left: 5px;
   }
 
@@ -55,7 +52,7 @@
 
   .program-header__slogan {
     text-align: left;
-    padding-top: 20px;
+    margin-top: 0;
     font-size: 20px;
     line-height: 1;
   }
@@ -64,6 +61,7 @@
     width: 550px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 39px;
   }
 
   .program-header__img {
@@ -99,45 +97,14 @@
   .program-header {
     padding-left: 100px;
     padding-top: 110px;
-    position: relative;
+
     height: 512px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: -115px;
-      left: 655px;
-      height: 694px;
-      width: 720px;
-      background-size: cover;
 
-      background-image: url("../../img/index-background-desktop.jpg");
-      background-repeat: no-repeat;
-      z-index: -2;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/index-background-desktop@2x.jpg");
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -115px;
-      left: 655px;
-      height: 694px;
-      width: 720px;
-      background: rgba(104, 183, 56, 0.85);
-      z-index: -1;
-    }
   }
 
   .program-header__img {
     left: 490px;
     top: 23px;
-  }
-
-  .program {
-    margin-top: 0;
   }
 }

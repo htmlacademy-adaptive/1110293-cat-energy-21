@@ -1,0 +1,42 @@
+
+.title {
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  background: inherit;
+  color: $color-title;
+
+  &::before {
+    content: "";
+    background-color: $button-color;
+    position: absolute;
+    top: 14px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    height: 2px;
+    overflow: hidden;
+  }
+
+  span {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    background: white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    padding-bottom: 40px;
+  }
+}

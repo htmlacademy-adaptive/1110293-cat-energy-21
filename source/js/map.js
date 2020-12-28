@@ -34,8 +34,6 @@ ymaps.ready(function () {
         // Опции.
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
-        // Своё изображение иконки метки.
-        iconImageHref: "images/myIcon.gif",
         // Размеры метки.
         iconImageSize: [30, 42],
         // Смещение левого верхнего угла иконки относительно
