@@ -60,6 +60,7 @@
   height: 148px;
   margin-left: 0;
   margin-bottom: 0;
+  font: inherit;
 
   &::placeholder {
     color: $special_dark-grey;
@@ -245,25 +246,6 @@
   min-width: 170px;
 }
 
-.title {
-  margin-bottom: 75px;
-  font-size: 36px;
-  line-height: 36px;
-  position: relative;
-  width: 100%;
-
-  &::before {
-    content: "";
-    background-color: #68b738;
-    position: absolute;
-    top: 20px;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    z-index: -1;
-    width: 100vw;
-    height: 2px;
-  }
-}
 
 .form__legend {
   padding: 12px 10px 37px 13px;
@@ -288,6 +270,7 @@
 .form__title__form {
   padding-top: 0;
 }
+
 
 @media (min-width: $tablet-width) {
   .form__label {
@@ -379,12 +362,6 @@
     padding: 0;
   }
 
-  .button {
-    width: 280px;
-    height: 52px;
-    margin-bottom: 0;
-  }
-
   .form__annotation {
     margin-left: 61px;
     font-size: 16px;
@@ -423,12 +400,13 @@
     justify-content: space-between;
   }
 
-  .form__legend-additionally {
-    padding-bottom: 60px;
+  .form__textarea {
+    height: 174px;
+    width: 1220px;
   }
 
-  .form__field {
-    width: 550px;
+  .form__legend-additionally {
+    padding-bottom: 60px;
   }
 
   .form__field--input-contacts {
@@ -453,10 +431,6 @@
     padding-left: 57px;
     width: 1200px;
     grid-template-columns: repeat(auto-fill, 205px);
-  }
-
-  .button {
-    width: 568px;
   }
 
   .form__button-wrapper {
@@ -493,7 +467,7 @@
   }
 
   .form__fieldset-anket {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .form__additionally-wrapper .form__field {

@@ -12,6 +12,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 const sync = require("browser-sync").create();
+const gcmq = require("gulp-group-css-media-queries");
+const shorthand = require("gulp-shorthand");
 
 // Styles
 
@@ -21,6 +23,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gcmq())
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))

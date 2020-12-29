@@ -6,10 +6,23 @@
   line-height: 1;
 }
 
+
+@media (max-width: $mobile-width-only) {
+  .block-title {
+    padding-bottom: 42px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .block-title {
     font-size: 60px;
     text-align: left;
     word-break: break-word;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-title {
+    padding-top: 70px;
   }
 }

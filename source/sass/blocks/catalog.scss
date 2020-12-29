@@ -59,6 +59,7 @@
 .catalog__title {
   color: $dark;
   text-align: left;
+  padding-bottom: 41px;
 }
 
 
@@ -148,7 +149,7 @@
 
   .catalog__title {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   .site-list__params {
@@ -245,6 +246,10 @@
   .site-list__product-item .button {
     width: 168px;
     max-height: 40px;
+  }
+
+  .catalog__title {
+    padding-top: 71px;
   }
 
   .site-list__params {

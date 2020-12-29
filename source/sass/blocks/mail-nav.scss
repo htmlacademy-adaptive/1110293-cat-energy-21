@@ -152,4 +152,37 @@
       }
     }
   }
+
+  .main-nav__list__index {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -115px;
+      left: -100px;
+      height: 694px;
+      width: 720px;
+      background-size: cover;
+
+      background-image: url("../../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -115px;
+      left: -100px;
+      height: 694px;
+      width: 720px;
+      background: rgba(104, 183, 56, 0.85);
+      z-index: -1;
+    }
+  }
 }

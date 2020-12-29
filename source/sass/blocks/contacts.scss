@@ -5,14 +5,44 @@
   min-height: 114px;
 }
 
+.contacts__title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: $font;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #111111;
+  max-width: 140px;
+}
+
+.contacts__text {
+  line-height: 20px;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 0 40px;
+    height: 200px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    width: 155px;
+    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     padding: 0 80px;
+  }
+
+  .contacts__text {
+    text-align: left;
   }
 }
