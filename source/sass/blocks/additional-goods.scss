@@ -6,17 +6,6 @@
   padding-top: 25px;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-@media (min-width: $mobile-width-only) {
-  .container {
-    padding-left: 20px;
-  }
-}
-
 .extra__wrapper {
   position: relative;
 
@@ -134,11 +123,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
     }
-  }
-
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .gif__wrapper {
