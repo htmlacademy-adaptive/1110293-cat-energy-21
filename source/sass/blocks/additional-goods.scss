@@ -84,11 +84,11 @@
   box-sizing: border-box;
   margin-top: 40px;
   background-repeat: no-repeat;
-  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-image: url("./../img/gift-photo-mobile.jpg");
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("./../img/gift-photo-mobile@2x.jpg");
   }
 }
 
@@ -118,10 +118,10 @@
   .gif {
     max-height: 200px;
     margin-top: 70px;
-    background-image: url("../../img/gift-photo-tablet.jpg");
+    background-image: url("./../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-image: url("./../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -241,11 +241,11 @@
     width: 245px;
     margin-top: 0;
     margin-left: 80px;
-    background-image: url("../../img/gift-photo-mobile.jpg");
+    background-image: url("./../img/gift-photo-mobile.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-photo-mobile@2x.jpg");
+      background-image: url("./../img/gift-photo-mobile@2x.jpg");
     }
   }
 
