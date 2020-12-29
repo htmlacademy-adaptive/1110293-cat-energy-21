@@ -53,7 +53,7 @@ ymaps.ready(function () {
         // Необходимо указать данный тип макета.
         iconLayout: "default#imageWithContent",
         // Своё изображение иконки метки.
-        iconImageHref: "../img/map-pin.svg",
+        iconImageHref: "./img/map-pin.svg",
         // Размеры метки.
         iconImageSize: [113, 106],
         // Смещение левого верхнего угла иконки относительно
