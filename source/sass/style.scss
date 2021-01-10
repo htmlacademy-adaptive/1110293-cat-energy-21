@@ -1,8 +1,8 @@
 @import "adjustment/variables.scss";
-@import "../css/normalize.scss";
-@import "adjustment/scss_fonts.scss";
+@import "adjustment/normalize.scss";
+@import "adjustment/fonts.scss";
 @import "adjustment/visually-hidden.scss";
-@import "adjustment/center.scss";
+@import "blocks/center.scss";
 @import "blocks/page.scss";
 @import "blocks/page-main.scss";
 @import "blocks/mail-nav.scss";
@@ -16,9 +16,10 @@
 @import "blocks/catalog.scss";
 @import "blocks/additional-goods.scss";
 @import "blocks/social.scss";
-@import "blocks/container.scss";
 @import "blocks/block-title.scss";
 @import "blocks/title.scss";
+@import "blocks/site-list.scss";
+@import "blocks/gif.scss";
 @import "blocks/logo-mobile.scss";
 @import "blocks/contacts.scss";
 @import "blocks/form.scss";
