@@ -1,4 +1,4 @@
 function beforeAfter() {
-  document.querySelector(".kobavenusab").style.width =
+  document.querySelector(".example__slider__kobavenusab").style.width =
     document.getElementById("volume").value + "%";
 }

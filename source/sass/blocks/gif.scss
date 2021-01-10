@@ -1,0 +1,85 @@
+.gif {
+  max-height: 289px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-image: url("./../img/gift-photo-mobile.jpg");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.gif__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding: 58px 60px 33px 60px;
+}
+
+.gif__text {
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: "Arial";
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .gif {
+    max-height: 200px;
+    margin-top: 70px;
+    background-image: url("./../img/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .gif__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 58px 124px 33px 80px;
+  }
+
+  .gif__text {
+    max-width: 162px;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .gif {
+    max-height: 289px;
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+    background-image: url("./../img/gift-photo-mobile.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/gift-photo-mobile@2x.jpg");
+    }
+  }
+
+  .gif__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 58px 60px 33px 60px;
+  }
+
+  .gif__text {
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.2;
+    font-style: "Arial";
+    text-align: center;
+  }
+}
