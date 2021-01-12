@@ -7,6 +7,13 @@
   position: absolute;
   left: 20px;
   top: 190px;
+  height: 280px;
+  width: 270px;
+}
+
+
+.program-header__picture {
+  z-index: 1;
 }
 
 
@@ -68,6 +75,8 @@
     left: -45px;
     top: 255px;
     z-index: -1;
+    height: 600px;
+    width: 700px;
   }
 
   .program-header__button-wrapper .button {
@@ -103,5 +112,7 @@
   .program-header__img {
     left: 490px;
     top: 23px;
+    height: 499px;
+    width: 550px;
   }
 }

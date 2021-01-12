@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+.additional-goods__wrapper__catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog__title {
   color: $dark;
   text-align: left;
@@ -25,6 +31,10 @@
 
 
   .catalog__list {
+    margin-top: 114px;
+  }
+
+  .additional-goods__wrapper__catalog__list {
     margin-top: 114px;
   }
 }
