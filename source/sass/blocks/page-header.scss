@@ -44,7 +44,7 @@
     min-width: 200px;
   }
 
-  .page-header--opened .page-header__toogle {
+  .main-nav--opened .page-header__toogle {
     top: 10px;
     left: 3px;
 
@@ -87,7 +87,7 @@
     }
   }
 
-  .page-header--closed .page-header__toogle::before {
+  .page-header__button-wrapper--closed .page-header__toogle::before {
     content: "";
     position: absolute;
     top: 5px;

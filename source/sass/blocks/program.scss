@@ -67,19 +67,48 @@
   box-shadow: 0 2px 0 0 $program__subtitle-shadow-color;
 }
 
-.program__link {
-  font-family: $font;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 1;
-  color: $dark;
 
-  &:active {
-    color: $nav-active-color;
-    height: 14px;
-    width: 32px;
-  }
+.program__link {
+  text-decoration: none;
+  color: $color-title;
+  font-family: $font;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.3;
 }
+
+.program__link::before {
+  content: "";
+  background-color: $color-title;
+  order: 1;
+  width: 18px;
+  height: 2px;
+  margin-left: 14px;
+  transition: width 0.3s ease-out;
+}
+
+.program__link::after {
+  content: "";
+  order: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent $color-title;
+}
+
+.program__link:hover::before {
+  width: 26px;
+}
+
+.program__link:active {
+  opacity: 0.5;
+}
+
 
 .program__list {
   display: flex;
@@ -132,7 +161,7 @@
       left: 395px;
       height: 211px;
       width: 200px;
-      background-image: url("../img/cat-back-tablet.png");
+      background-image: url("../img/cat_back-tablet.png");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/cat-back-tablet@2x.png");
@@ -167,7 +196,7 @@
   }
 
   .program__description {
-    min-width: 467px;
+    width: 457px;
     padding-bottom: 5px;
   }
 
