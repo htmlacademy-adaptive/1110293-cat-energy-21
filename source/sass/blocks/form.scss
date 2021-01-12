@@ -402,7 +402,7 @@
     padding-bottom: 60px;
   }
 
-  .form__field--input-contacts {
+  .form__input--input-contacts {
     width: 473px;
   }
 
@@ -477,5 +477,9 @@
   .form-input--checkbox:checked + label::after {
     top: -8px;
     left: -45px;
+  }
+
+  .form__input__program {
+    width: 500px;
   }
 }

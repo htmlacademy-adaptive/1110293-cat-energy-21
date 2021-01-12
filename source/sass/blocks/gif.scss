@@ -3,12 +3,8 @@
   box-sizing: border-box;
   margin-top: 40px;
   background-repeat: no-repeat;
-  background-image: url("./../img/gift-photo-mobile.jpg");
   background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("./../img/gift-photo-mobile@2x.jpg");
-  }
+  background-image: url("./../img/gift-photo-mobile.jpg");
 }
 
 .gif__wrapper {
@@ -28,11 +24,21 @@
 }
 
 
+@media (min-width: $mobile-width-only) {
+  .gif {
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/gift-photo-mobile@2x.jpg");
+    }
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .gif {
     max-height: 200px;
     margin-top: 70px;
     background-image: url("./../img/gift-photo-tablet.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("./../img/gift-photo-tablet@2x.jpg");
