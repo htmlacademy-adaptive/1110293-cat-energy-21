@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es");
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
@@ -51,6 +51,19 @@ const html = () => {
 // };
 
 // exports.scripts = scripts;
+
+// Scripts
+
+const scripts = () => {
+  return gulp
+    .src("source/js/*.{js}")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.scripts = scripts;
 
 // Images
 const images = () => {
@@ -127,13 +140,13 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy, images, createWebp)
+  gulp.parallel(styles, html, scripts, copy, images, createWebp)
 );
 
 exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy, createWebp),
+  gulp.parallel(styles, html, scripts, copy, createWebp),
   gulp.series(server, watcher)
 );
