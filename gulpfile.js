@@ -68,6 +68,17 @@ const images = () => {
 
 exports.images = images;
 
+// WebP
+
+const createWebp = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"));
+};
+
+exports.createWebp = createWebp;
+
 // Copy
 
 const copy = () => {
@@ -114,12 +125,15 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html), sync.reload);
 };
 
-const build = gulp.series(clean, gulp.parallel(styles, html, copy, images));
+const build = gulp.series(
+  clean,
+  gulp.parallel(styles, html, copy, images, createWebp)
+);
 
 exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy),
+  gulp.parallel(styles, html, copy, createWebp),
   gulp.series(server, watcher)
 );
